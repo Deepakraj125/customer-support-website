@@ -1,0 +1,28 @@
+
+.greet{
+margin-top:40px ;
+}
+
+.con{
+    margin-top: 40px;
+    border: 1px solid green ;
+}
+
+.mail{
+    margin-bottom: 20px;
+}
+
+.message{
+    margin-bottom: 10px;
+}
+.btn{
+    background-color: rgba(0, 136,169, 1);
+    border-radius: 8px;
+    width: 80px;
+    height: 40px;
+    margin-left:0px;
+  }
+
+  .btn:hover{
+    background-color: rgba(2, 49, 60, 1);
+  }
