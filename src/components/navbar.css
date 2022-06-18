@@ -11,12 +11,11 @@ li, a, button{
     justify-content: space-between;
     align-items: center;
     padding: 10px 10%;
-    background-color: rgb(127, 122, 122);
+    background-color: #54f0be;
+    height:10%;
 }
 
-.logo{
-    cursor: pointer;
-}
+
 
 .nav-links li {
     display: inline-block;
@@ -28,12 +27,18 @@ li, a, button{
 }
 
 .nav-links li :hover{
-    color: #0088a9;
+    color: rgb(11, 151, 151);
+    font-weight: bold;
+    /* text-decoration: underline; */
 }
+
+
+
+
 
 button{
     padding: 9px 25px;
-    background-color: rgba(0, 136,169, 1);
+    background-color: rgb(0, 1, 1);
     border:none;
     border-radius: 50px;
     cursor: pointer;
@@ -41,5 +46,17 @@ button{
 }
 
 button:hover{
-    background-color: rgba(2, 49, 60, 1);
+    background-color: rgba(0, 1, 1, 0.834);
+}
+
+.logo{
+    cursor: pointer;
+    border-radius: 0;
+    background-color: #54f0be;
+    color: black;
+}
+
+
+.logo:hover{
+    background-color: rgba(0, 1, 1, 0.434);
 }

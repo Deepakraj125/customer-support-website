@@ -1,16 +1,19 @@
 import React from 'react';
 import "./footer.css"
 // import { Link } from 'react-router-dom';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
 
 const Footer = () => {
   return (
     <div className="footer">
       <div>
-          <a href ='#'>Product support</a>
-          <a href='#'>Website</a>
-          <a href='#'>Facebook</a>
-          <a href='#'>Twitter</a>
-          <a href='#'>Instagram</a>
+          {/* <a href ='https://www.hpe.com/in/en/products.html' target="_blank">Products</a>
+          <a href='https://www.hpe.com/in/en/home.html' target="_blank">Website</a> */}
+          <a href='https://www.facebook.com/HewlettPackardEnterprise/' target="_blank"> <FacebookIcon/> </a>
+          <a href='https://twitter.com/hpe' target="_blank"> <TwitterIcon/></a>
+          <a href='https://www.linkedin.com/company/hewlett-packard-enterprise' target="_blank"> <LinkedInIcon/></a>
       </div>
       
       <div className = "copyright">© Copyright 2022 Hewlett Packard Enterprise Intern team</div>

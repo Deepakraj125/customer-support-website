@@ -1,11 +1,19 @@
-@import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300);
+/* @import url(https://fonts.googleapis.com/css?family=Alegreya+Sans:300); */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 
 body {
   font-family: 'Alegreya Sans', sans-serif;
-  font-size: 18px;
-  font-weight: 200;
+  font-size: 17px;
+  font-weight: 100;
   padding: auto;
-  background-color: #bfc5ca;
+  background-color: #fff;
+  
+}
+
+.bg{
+  background-image: url(../public/logo.png);
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
 }
 
 

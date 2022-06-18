@@ -1,17 +1,22 @@
+import { Link } from "react-router-dom";
 import "./navbar.css";
+import { useHistory} from "react-router-dom";
 
 // using named export 
-export function Navbar(props){
+export function Navbar(setLoginUser){
 
+  const history = useHistory();
     return (
         <div className='nav'>
-        <label className='logo'>HPE</label>    
+        <button className='logo' onClick={ () => history.push("/home")}>HPE</button>    
+        
         <ul className='nav-links'>
-          <li> <a href ="#"> Home</a> </li>
-          <li> <a href =""> About</a> </li>
-          <li> <a href ="#"> Services</a> </li>
+          <li> <Link to ="/home" > Home</Link> </li>
+          <li> <Link to ="/about" > About</Link> </li>
+          {/* <li> <Link to ="/contact" > contact</Link> </li> */}
         </ul>
-        <a href ="#"> <button>contact</button></a> 
+        <Link to ="/login"> <button  onClick={ () => setLoginUser()}>Sign Out</button></Link> 
+
     </div>
         
         

@@ -1,20 +1,40 @@
 import React from 'react'
+import { Navbar } from './Navbar';
+import Footer from './Footer';
+import  './home.css'
+// import Bot from './Bot';
+// import Slider from './Slider'
+// import { SliderData } from './SliderData';
+
+// import {BrowserRouter as Router, Link} from 'react-router-dom';
 
 export const About = () => {
   return (
+
+    <div>
+    <Navbar />
+    <div className='title'> <h1>An AI based Bot for Enterprise Customer Support</h1></div>
+    
     <div className="container">
+
+      {/* <Slider slides = {SliderData}/> */}
+      <div className='bg'> </div>
         <div className="about">
-            <p>HPE is the global edge-to-cloud company built to transform your business. How? By helping you connect, protect, analyze, and act on all your data and applications wherever they live, from edge to cloud, so you can turn insights into outcomes at the speed required to thrive in today’s complex world.</p>
+          <h1>Purpose of Chatbot</h1>
+            <p>Creating a bot, that could create responses based on the queries by the user/customer and also schedule a ticket for the further queries.</p>
         </div>
 
-        <div className="vision">
-        "At HPE, we’re ushering in a new era: the Age of Insight, where we make all your data work for you, wherever it lives. This era will lead to services and products we can’t yet imagine, and it will generate discoveries that elevate the greater well-being of every human on this planet."
+        <div className="system">
+          <h1>Proposed System</h1>
+        <p>A Chatbot to engage with customers to create personalized brand experiences that increases customer acquisition, conversion, retention, and loyalty. </p>
+        <p>It also has the power to extend beyond the typical inbound customer service scenarios to engage across multiple touchpoints a cross the customer’s lifecycle, transcending traditional functional silos.</p>
         </div>
-        <div>
-          <h3> Presenting  AI based Chatbot for Costumer support</h3>
-        </div>
-
-        <div className="goal"> At HPE, our team members search beyond customers' needs today to accelerate what’s next and make a difference—for others, our company, and the planet.</div>
+        
+        
     </div>
+    
+    <Footer/>
+    </div>
+   
   )
 }
