@@ -8,6 +8,10 @@ import Register from './components/Register/Register';
 import {BrowserRouter as Router ,Route,  Switch} from "react-router-dom";
 import {useState} from "react";
 import Home from './components/Home';
+import Ticket from './components/Ticket';
+import Dashboard from './components/Dashboard';
+import AdminLogin from './components/Login/AdminLogin';
+
 
 
 function App() {
@@ -40,6 +44,18 @@ function App() {
 
       <Route exact path ="/register">
         <Register/>
+      </Route>
+
+      <Route exact path ="/ticket">
+        <Ticket/>
+      </Route>
+
+      <Route exact path ="/adminlogin">
+       <AdminLogin/>
+      </Route>
+
+      <Route exact path ="/dashboard">
+        <Dashboard/>
       </Route>
 
       </Switch>

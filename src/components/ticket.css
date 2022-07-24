@@ -1,4 +1,4 @@
-.register{
+.ticket-form{
     margin-top: 8%;
     margin-left: 32%;
     width: 500px;
@@ -11,7 +11,7 @@
 
 }
 
-.register > input{
+.ticket-form > input, textarea{
     border-radius: 8px;
     border: 2px solid #dddfe2;
     outline: none;
@@ -20,9 +20,17 @@
     padding: 0.5rem 0.75rem;
     width:92%;
     font-size: 1rem;
+    
 }
 
-.register > .btn{
+.ticket-form > textarea{
+    width: 460px ;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+
+.ticket-form > .btn{
     background: #1d2129;
     border: 1px solid #1d2129;
     width: 40%;

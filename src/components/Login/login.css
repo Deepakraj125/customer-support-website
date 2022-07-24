@@ -35,3 +35,11 @@
     cursor:pointer;
     margin-left: 30%;
 }
+
+.reg{
+    text-decoration: underline;
+}
+
+.btn:hover{
+    background-color: #54f0be;
+}

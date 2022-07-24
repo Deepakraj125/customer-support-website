@@ -5,7 +5,7 @@ import { useHistory} from "react-router-dom";
 
 
 
-const Login = ({setLoginUser}) => {
+const AdminLogin = ({setLoginUser}) => {
  
   const history = useHistory();
 
@@ -14,6 +14,8 @@ const Login = ({setLoginUser}) => {
     password:""
   })
   
+ 
+
   const handleChange = e =>{
     const {name, value} = e.target;
 
@@ -32,7 +34,7 @@ const Login = ({setLoginUser}) => {
     .then(res => {  
       alert(res.data.message)
       setLoginUser(res.data.user)
-        history.push("/")   
+        history.push("/dashboard")   
     })
   }
 
@@ -40,18 +42,16 @@ const Login = ({setLoginUser}) => {
 
   return (
     <div className='login'>
-        <h1>Login Page</h1>
+        <h1>Admin Login Page</h1>
 
         <input type='text'  name ="email" placeholder ='Enter your email' onChange={handleChange} value={user.name}></input>
         <input type='password'  name ="password"  placeholder ='Enter your password' onChange={handleChange} value={user.password}></input>
         <div className='btn' onClick={login}>Sign In</div>
 
-        <div className='btn reg'  onClick ={ () => history.push("/register")} >Create an account</div>
-        <div className='btn reg'  onClick ={ () => history.push("/adminlogin")} >Admin Login</div>
-
+        
 
     </div>
   )
 }
 
-export default Login
+export default AdminLogin

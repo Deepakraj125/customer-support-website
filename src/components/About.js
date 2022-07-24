@@ -2,6 +2,7 @@ import React from 'react'
 import { Navbar } from './Navbar';
 import Footer from './Footer';
 import  './home.css'
+
 // import Bot from './Bot';
 // import Slider from './Slider'
 // import { SliderData } from './SliderData';
@@ -32,6 +33,8 @@ export const About = () => {
         
         
     </div>
+
+  
     
     <Footer/>
     </div>

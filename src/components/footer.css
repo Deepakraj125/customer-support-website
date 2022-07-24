@@ -12,7 +12,7 @@
   }
 
   a{
-    margin-right: 25px;
+    margin-right: 40px;
     text-decoration: none;
     color:black;
     cursor: pointer;
@@ -25,7 +25,13 @@
   }
   
   .copyright{
-    margin-top: 18px;
+    margin-top: 5px;
     text-align: center;
-    color:black;
+    color:white;
   }
+
+  button{
+    background-color: #44cda1;
+
+  }
+
